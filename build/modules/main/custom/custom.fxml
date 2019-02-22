@@ -1,0 +1,28 @@
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import java.net.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="custom.CustomController">
+    
+    <top>
+        <Label>In order to use your own game, just paste the values of array, separated with commas</Label>
+    </top>
+    <center>
+        <TextArea fx:id="customGame"></TextArea>
+    </center>
+    
+    <bottom>
+        <HBox fx:id="customButtons" spacing="10">
+            <Button fx:id="loadButton" onAction="#loadCustom">Load</Button>
+            <Button fx:id="clearButton" onAction="#clearCustom">Clear</Button>
+            <Button fx:id="cancelButton" onAction="#cancelCustom">Cancel</Button>
+        </HBox>
+    </bottom>
+
+    <stylesheets>
+        <URL value="@custom.css" />
+    </stylesheets>
+    
+</BorderPane>

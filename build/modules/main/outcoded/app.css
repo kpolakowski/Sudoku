@@ -1,0 +1,40 @@
+.root {
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #eee;
+}
+
+#options{
+    -fx-min-width: 200px;
+    -fx-pref-width: 200px;
+    -fx-max-width: 200px;
+    -fx-border-width: 1;
+    -fx-border-color: transparent #ccc transparent transparent;
+    -fx-background-color: #eee;
+    -fx-padding:20px;
+}
+Button,ComboBox{
+    -fx-pref-width:200px;
+}
+#gameBoard {
+    -fx-padding:30;
+    -fx-wrap-text: true;
+    -fx-background-color:#f4f4f4;
+    
+}
+NumberField{
+    -fx-alignment: center ;
+    -fx-pref-width:60px;
+    -fx-pref-height:60px;
+    -fx-cursor: hand;
+    -fx-text-fill:#444;
+    -fx-font-weight:normal;
+}
+NumberField.red{
+    -fx-background-color:#eee;
+}
+.text-field{
+    -fx-border-style: solid inside;
+    -fx-border-width: 1;
+    -fx-border-color: #ccc;
+}
